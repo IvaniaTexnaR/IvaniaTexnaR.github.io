@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>practica 5</title>
+</head>
+<body>
+  <center><h1>Formulario de registro de Alumnos de Nuevo Ingreso</h1></center>
+
+    <form>
+        <p><label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br></p>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br>
+        <p><label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br></p>
+
+        <label>Género:</label><br>
+        <input type="radio" id="hombre" name="genero" value="hombre" required>
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" id="mujer" name="genero" value="mujer">
+        <label for="mujer">Mujer</label><br>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label><br><br>
+
+        <label>Intereses:</label><br>
+        <input type="checkbox" id="deportes" name="intereses" value="deportes">
+        <label for="deportes">Deportes</label><br>
+        <input type="checkbox" id="musica" name="intereses" value="musica">
+        <label for="musica">Música</label><br>
+        <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+        <label for="tecnologia">Tecnología</label><br><br>
+
+	<p>
+	<label for="carrera">Carrera a la que aspiras:</label>
+	<select id="carrera" name="carrera">
+	<option value="sistemas">Ingeniería en Sistemas Computacionales</option>
+	<option value="civil">Ingeniería Civil</option>
+	<option value="arquitectura">Arquitectura</option>
+	<option value="mecatronica">Ingeniería en Mecatrónica</option>
+	</select>
+	<br>
+	</p>
+
+	<label for="comentarios">Comentarios adicionales:</label><br>
+	<textarea id="comentarios" name="comentarios" rows="10" cols="50"></textarea><br><br>
+	<input type="submit" value="Enviar Formulario">
+	<input type="reset" value="Restablecer Formulario">
+    </form>
+</body>
+</html>
